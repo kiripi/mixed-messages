@@ -42,7 +42,7 @@ function mixPieces() {
 }
 
 function messageOnScreen() {
-  newMessage.innerHTML = mixPieces();
+  newMessage.innerHTML = mixPieces().replace(/,\s*$/, "");
 }
 
 button.addEventListener("click", messageOnScreen);

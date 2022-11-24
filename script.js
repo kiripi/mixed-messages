@@ -1,3 +1,5 @@
+const button = document.querySelector("button");
+
 const deepQuotes = [
   "develop success from failures",
   "live like you will die tomorrow",
@@ -22,6 +24,9 @@ const lifeQuotes = [
   "you run the day",
 ];
 
+const newMessage = document.createElement("p");
+document.querySelector("div").appendChild(newMessage);
+
 function generateIndexNumber() {
   let indexNumber = Math.floor(Math.random() * 5);
   return indexNumber;
@@ -33,3 +38,9 @@ function mixPieces() {
   }, ${lifeQuotes[generateIndexNumber()]}`;
   return message[0].toUpperCase() + message.slice(1);
 }
+
+function messageOnScreen() {
+  newMessage.innerHTML = mixPieces();
+}
+
+button.addEventListener("click", messageOnScreen);

@@ -8,3 +8,5 @@ Project is created with:
 - HTML
 - CSS
 - JS
+
+### Status - complete

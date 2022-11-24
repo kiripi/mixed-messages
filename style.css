@@ -6,11 +6,11 @@
 
 body {
   align-items: center;
-  background: rgb(0, 0, 0);
+  background: rgb(3, 4, 94);
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(3, 48, 62, 1) 100%
+    262deg,
+    rgba(3, 4, 94, 1) 0%,
+    rgba(0, 150, 199, 1) 100%
   );
   color: #ade8f4;
   display: flex;
@@ -23,20 +23,21 @@ body {
   text-align: center;
 }
 
-button {
+#btn {
   color: #03045e;
   background-color: #0077b6;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  font-size: 18px;
   padding: 20px 50px;
 }
 
-button:hover {
+#btn:hover {
   cursor: pointer;
   background-image: linear-gradient(to top, #ade8f4, #0077b6);
 }
 
-button:active {
+#btn:active {
   margin: 1px 1px 0;
   box-shadow: -1px -1px 1px #8bf;
 }

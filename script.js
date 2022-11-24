@@ -1,4 +1,4 @@
-const button = document.querySelector("button");
+const button = document.getElementById("btn");
 
 const deepQuotes = [
   "develop success from failures",
@@ -25,7 +25,7 @@ const lifeQuotes = [
 ];
 
 const newMessage = document.createElement("p");
-document.querySelector("div").appendChild(newMessage);
+document.querySelector(".container").appendChild(newMessage);
 
 function generateIndexNumber() {
   let indexNumber = Math.floor(Math.random() * 5);
@@ -33,9 +33,12 @@ function generateIndexNumber() {
 }
 
 function mixPieces() {
-  let message = `${deepQuotes[generateIndexNumber()]}, ${
-    successQuotes[generateIndexNumber()]
-  }, ${lifeQuotes[generateIndexNumber()]}`;
+  let randomNumber1 = generateIndexNumber();
+  let randomNumber2 = generateIndexNumber();
+  let randomNumber3 = generateIndexNumber();
+
+  let message = `${deepQuotes[randomNumber1]}, ${successQuotes[randomNumber2]}, ${lifeQuotes[randomNumber3]}`;
+
   return message[0].toUpperCase() + message.slice(1);
 }
 

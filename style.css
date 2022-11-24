@@ -5,19 +5,38 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(3, 48, 62, 1) 100%
+  );
+  color: #ade8f4;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
-  overflow: hidden;
+  justify-content: center;
   margin: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
 button {
-  color: #fff;
-  background-color: black;
-  padding: 20px 50px;
+  color: #03045e;
+  background-color: #0077b6;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px 50px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to top, #ade8f4, #0077b6);
+}
+
+button:active {
+  margin: 1px 1px 0;
+  box-shadow: -1px -1px 1px #8bf;
 }

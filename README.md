@@ -9,6 +9,6 @@ Project is created with:
 - CSS
 - JS
 - DOM
-- GIT version control
+- Git and GitHub
 
 ### Status - complete

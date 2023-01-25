@@ -44,6 +44,7 @@ h1 {
 #btn:hover {
   cursor: pointer;
   background-image: linear-gradient(to top, #ade8f4, #0077b6);
+  transition: background-color 450ms ease 50ms;
 }
 
 #btn:active {

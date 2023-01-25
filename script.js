@@ -38,7 +38,7 @@ function mixPieces() {
   for (let quotePart in quotes) {
     message += `${quotes[quotePart][generateIndexNumber()]}, `;
   }
-  return message[0].toUpperCase() + message.slice(1);
+  return message[0].toUpperCase() + message.slice(1) + '.';
 }
 
 function messageOnScreen() {

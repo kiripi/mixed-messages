@@ -8,3 +8,7 @@ Project is created with:
 - HTML
 - CSS
 - JS
+- DOM
+- Git and GitHub
+
+### Status - complete
